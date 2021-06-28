@@ -1,0 +1,45 @@
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-images {
+    animation: fadeIn 1s;
+    width: 70rem;
+    height: 30rem;
+    object-fit: cover;
+    position: absolute;
+    top: 18rem;
+    left: 25.5rem;
+}
+
+.right-arrow, .left-arrow {
+    position: absolute;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, .4);
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.right-arrow {
+    top: 32rem;
+    right: 14rem;
+}
+
+.right-arrow:hover, .left-arrow:hover {
+    color: rgba(255, 255, 255, .7);
+}
+
+.left-arrow {
+    top: 32rem;
+    left: 14.3rem;
+}

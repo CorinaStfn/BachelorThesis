@@ -1,0 +1,23 @@
+const express = require ('express')
+const app = express()
+const mongoose = require('mongoose')
+const dotenv = require('dotenv')
+const routesSingUp = require('./routes/signUp')
+const routesEatAndCoffee = require('./routes/eatAndCoffee')
+const routesSleep = require('./routes/sleep')
+const routesVisit = require('./routes/visit')
+const routesActivities = require('./routes/activities')
+const cors = require('cors')
+
+dotenv.config()
+
+mongoose.connect(process.env.DATABASE_ACCESS, () => console.log("Database connected"))
+
+app.use(express.json())
+app.use(cors())
+app.use('', routesSingUp)
+app.use('', routesEatAndCoffee)
+app.use('', routesSleep)
+app.use('', routesVisit)
+app.use('', routesActivities)
+app.listen(4000, () => console.log("server is up and running"))

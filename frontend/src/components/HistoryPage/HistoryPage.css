@@ -1,0 +1,202 @@
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+#historyContainer .container {
+    background-image: url("../../Images/parchment.png");
+    animation: fadeIn 1s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45rem;
+    height: 135rem;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 20rem;
+}
+
+.history-title {
+    font-size: 3rem;
+    margin: auto;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+.aboutSighisoara {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin: 5rem 0 0 0;
+    font-weight: bold;
+    opacity: .75;
+}
+
+.aboutSighisoara::first-letter,
+.aboutCitadel::first-letter {
+    font-size: 2.5rem;
+}
+
+.sighisoara-map {
+    position: absolute;
+    width: 15rem;
+    margin-left: 30rem;
+    opacity: .8;
+    clip-path: polygon(2% 8%, 88% 8%, 88% 91%, 2% 91%);
+    font-size: 0;
+}
+
+.sighisoara-map:hover {
+    position: absolute;
+    width: 70%;
+    margin: 0;
+    top: 30rem;
+    left: 18rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation: fadeIn 1s;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(212, 187, 157, 1);
+    text-align: center;
+    z-index: 2;
+    padding-bottom: 1rem;
+    opacity: 1;
+}
+
+.aboutCitadel {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin: 11rem 0 0 0;
+    font-weight: bold;
+    opacity: .75;
+}
+
+.citadel-towers {
+    margin-top: 1.5rem;
+    width: 30rem;
+}
+
+.citadel-tower {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.citadel-tower span:nth-child(2) {
+    opacity: .75;
+}
+
+.citadel-tower span:nth-child(4) {
+    font-size: .05rem;
+    opacity: 0;
+}
+
+.clockHover {
+    font-size: 1.2rem;
+    opacity: .75;
+}
+
+.herman {
+    position: absolute;
+    clip-path: polygon(10% 4.5%, 96% 4.5%, 96% 91%, 10% 91%);
+    width: 10rem;
+    top: 85rem;
+    left: 70rem;
+    opacity: .8;
+    font-size: 0;
+}
+
+.herman:hover {
+    position: absolute;
+    width: 38%;
+    margin: 0;
+    top: 60rem;
+    left: 36.8rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation: fadeIn 1s;
+    z-index: 2;
+    opacity: 1;
+}
+
+.herman img {
+    max-width: 140% !important;
+}
+
+.sig-photo1, .sig-photo2, .sig-photo3, .sig-photo4 {
+        position: absolute;
+        width: 11rem;
+        opacity: 0.8;
+        font-size: 0;
+}
+
+.sig-photo1 {
+    top: 106rem;
+    left: 71rem;
+}
+
+.sig-photo2 {
+    top: 116rem;
+    left: 71rem;
+}
+
+.sig-photo3 {
+    top: 127rem;
+    left: 71rem;
+}
+
+.sig-photo4 {
+    top: 139rem;
+    left: 71rem;
+}
+
+.sig-photo5 {
+    position: absolute;
+    width: 7rem;
+    opacity: 0.8;
+    top: 150rem;
+    left: 72rem;
+    font-size: 0;
+}
+
+.sig-photo1:hover, .sig-photo2:hover, .sig-photo3:hover, .sig-photo4:hover, .sig-photo5:hover {
+    position: absolute;
+    width: 80rem;
+    margin: 0;
+    animation: fadeIn 1s;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 2;
+    opacity: 1;
+    border:5px solid rgba(186, 166, 121, 1);
+    background-color: rgba(186, 166, 121, 1);
+    padding-bottom: .7rem;
+}
+
+.sig-photo1:hover {
+    top: 84rem;
+    left: 20rem;
+}
+
+.sig-photo2:hover {
+    top: 90rem;
+    left: 20rem;
+}
+
+.sig-photo3:hover {
+    top: 110rem;
+    left: 20rem;
+}
+
+.sig-photo4:hover {
+    top: 120rem;
+    left: 20rem;
+}
+
+.sig-photo5:hover {
+    width: 40rem;
+    top: 110rem;
+    left: 42rem;
+}
